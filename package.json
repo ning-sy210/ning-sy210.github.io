@@ -6,7 +6,7 @@
   "scripts": {
     "tw": "npx tailwindcss -i ./src/main.css -o ./build.css --watch",
     "dev": "vite",
-    "build": "tsc && vite build",
+    "build": "npx tailwindcss -o build.css && tsc && vite build",
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "preview": "npm run build && vite preview"
   },
